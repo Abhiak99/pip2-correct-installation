@@ -38,3 +38,7 @@ pip2 --version
 echo "[*] Checking pip3 version"
 echo "[*] pip3 --version"
 pip3 --version
+
+for i in {1..3}; do echo "[*]"; done
+
+echo "[*] Use pip2 for python2 modules "

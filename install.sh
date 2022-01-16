@@ -16,7 +16,7 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 echo "[*] python get-pip.py"
 python get-pip.py
 echo "[*] Downloading get-pip.py for python3"
-echo "[*] wget https://bootstrap.pypa.io/get-pip.py -o get-pip3.py"
+echo "[*] wget https://bootstrap.pypa.io/get-pip.py -O get-pip3.py"
 wget https://bootstrap.pypa.io/get-pip.py -O get-pip3.py
 echo "[*] python3 get-pip3.py"
 python3 get-pip3.py

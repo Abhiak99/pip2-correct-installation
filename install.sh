@@ -3,21 +3,24 @@
 
 if [[ "${EUID}" -ne 0 ]]; then
   echo -e "[-] This script must be run as root"
-  sleep 2s
   exit 1
 fi
 
 echo "[*] Copying python2 as python"
 echo "[*] cp /usr/bin/python2 /usr/bin/python"
 cp /usr/bin/python2 /usr/bin/python
+
 echo "[*] Downloading get-pip.py for python2.7"
 echo "[*] wget https://bootstrap.pypa.io/pip/2.7/get-pip.py" 
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+
 echo "[*] python get-pip.py"
 python get-pip.py
+
 echo "[*] Downloading get-pip.py for python3"
 echo "[*] wget https://bootstrap.pypa.io/get-pip.py -O get-pip3.py"
 wget https://bootstrap.pypa.io/get-pip.py -O get-pip3.py
+
 echo "[*] python3 get-pip3.py"
 python3 get-pip3.py
 
@@ -41,4 +44,4 @@ pip3 --version
 
 for i in {1..3}; do echo "[*]"; done
 
-echo "[*] Use pip2 for python2 modules "
+echo "[*] Use pip2 for python2.7 modules "

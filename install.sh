@@ -45,3 +45,5 @@ pip3 --version
 for i in {1..3}; do echo "[*]"; done
 
 echo "[*] Use pip2 for python2.7 modules "
+
+
